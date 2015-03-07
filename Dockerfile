@@ -1,6 +1,7 @@
 FROM phusion/baseimage:0.9.16
 
 ENV HOME /root
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 
