@@ -1,4 +1,5 @@
 FROM phusion/baseimage:0.9.16
+MAINTAINER Muhammad Zamroni <zam@nuwira.com>
 
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
