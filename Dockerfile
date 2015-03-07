@@ -40,7 +40,7 @@ RUN chmod +x        /etc/service/nginx/run
 RUN mkdir           /etc/service/phpfpm
 ADD build/phpfpm.sh /etc/service/phpfpm/run
 RUN chmod +x        /etc/service/phpfpm/run
-ADD build/index.php /var/www/html
+ADD build/index.php /var/www/html/
 RUN chmod +x        /var/www/html/index.php
 
 EXPOSE 80
