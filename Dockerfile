@@ -7,7 +7,7 @@ RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 CMD ["/sbin/my_init"]
 
 # Nginx-PHP Installation
-RUN apt-get update && apt-get install -y wget nano curl build-essential python-software-properties
+RUN apt-get update && apt-get install -y wget nano curl build-essential software-properties-common
 RUN add-apt-repository -y ppa:ondrej/php5
 RUN add-apt-repository -y ppa:nginx/stable
 RUN apt-get update
