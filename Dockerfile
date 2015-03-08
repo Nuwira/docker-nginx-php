@@ -11,10 +11,10 @@ CMD ["/sbin/my_init"]
 # Nginx-PHP Installation
 RUN apt-get update && apt-get install -y wget nano curl build-essential software-properties-common
 
-#RUN add-apt-repository -y ppa:ondrej/php5
-RUN touch /etc/apt/sources.list.d/ondrej-php5.list
-RUN echo "deb http://ppa.launchpad.net/ondrej/php5/ubuntu trusty main" >> /etc/apt/sources.list.d/ondrej-php5.list
-RUN echo "deb-src http://ppa.launchpad.net/ondrej/php5/ubuntu trusty main" >> /etc/apt/sources.list.d/ondrej-php5.list
+#RUN add-apt-repository -y ppa:ondrej/php5-5.6
+RUN touch /etc/apt/sources.list.d/ondrej-php5-5.6.list
+RUN echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /etc/apt/sources.list.d/ondrej-php5-5.6.list
+RUN echo "deb-src http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /etc/apt/sources.list.d/ondrej-php5-5.6.list
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
 
 RUN add-apt-repository -y ppa:nginx/stable
